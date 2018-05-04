@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mNotify</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[[NSNotificationCenter defaultCenter] addObserver:&lt;#(id)#&gt; forName:&lt;#(NSString *)#&gt; object:&lt;#(id)#&gt; queue:&lt;#(NSOperationQueue *)#&gt; usingBlock:&lt;#^(NSNotification *note, id observer)block#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5C80A899-1549-420E-994C-9EC8FA42B905</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>自动销毁block的通知机制</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mNotify - 自动销毁block的通知机制</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

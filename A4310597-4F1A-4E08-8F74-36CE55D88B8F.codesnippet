@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>setrootViewcontrollerWithSB</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"&lt;#SBNAME#&gt;" bundle:nil];
+    UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"&lt;#VCID#&gt;"];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A4310597-4F1A-4E08-8F74-36CE55D88B8F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>设置window的rootViewController By SB</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>setrootViewcontrollerWithSB - 设置window的rootViewController By SB</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

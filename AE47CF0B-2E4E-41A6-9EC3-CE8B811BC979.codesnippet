@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>typeofssblock</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>__typeof(&amp;*&lt;#weakobj#&gt;) s&lt;#weakobj#&gt; = &lt;#weakobj#&gt;;
+if (s&lt;#weakobj#&gt;) {
+    
+} else {
+    // probably nothing...
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AE47CF0B-2E4E-41A6-9EC3-CE8B811BC979</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>typeofssblock - block里面写strongself的模板</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>typeofssblock - block里面写strongself的模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

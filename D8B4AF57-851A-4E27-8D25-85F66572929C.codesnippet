@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>msinglem</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static id _instace;
++ (id)allocWithZone:(struct _NSZone *)zone {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        _instace = [super allocWithZone:zone];
+        [_instace commInit];
+    });
+    return _instace;
+}
+
++ (instancetype)shared&lt;#name#&gt; {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        _instace = [[self alloc] init];
+    });
+    return _instace;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    return _instace;
+}
+
+-(void)commInit {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D8B4AF57-851A-4E27-8D25-85F66572929C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>msinglem</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>msinglem - 单例实现</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

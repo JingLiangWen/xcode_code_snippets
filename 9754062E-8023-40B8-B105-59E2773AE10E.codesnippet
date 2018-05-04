@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>strcompare</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSString* requiredVersion = @"1.2.0";
+    NSString* actualVersion = @"1.0.0";
+    
+    if ([requiredVersion compare:actualVersion options:NSNumericSearch] == NSOrderedDescending) {
+        // requiredVersion &gt; actualVersion 跑此处
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9754062E-8023-40B8-B105-59E2773AE10E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>strcompare - 版本号字符串对比</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>strcompare - 版本号字符串对比</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

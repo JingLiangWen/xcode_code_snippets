@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>dmspost</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSError *error;
+            // 返回报文的result字段值；
+    NSDictionary *result = [self callServiceWithFunctionCode:&lt;#functionCode#&gt; parameters:mutableDic error:&amp;error];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (error) { // 网络异常 、 错误码非0000
+                    if (error.code != 20010999) {  // 非999
+                        [MBProgressHUD showError:&lt;#业务错误#&gt;];
+                    }else if(error.code == NSIntegerMax){ // 网络异常
+                        [MBProgressHUD showError:error.userInfo[@"errormessage"]];
+                    }
+                    return;
+                } 
+                
+                // 正常处理...
+                
+            });
+        });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>428E8DF9-CD1B-4244-917D-95F3C829EAB5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dmspost  - dms发送网络请求模板</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>dmspost  - dms发送网络请求模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

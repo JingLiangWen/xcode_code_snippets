@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>myheader</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ &lt;#className#&gt;.&lt;#h/m#&gt;
+ @功能 &lt;#功能说明#&gt;
+ @作者 &lt;#作者#&gt;
+ @日期 &lt;#2016#&gt;/&lt;#12#&gt;/&lt;#1#&gt;
+ @修改记录：
+ 1.&lt;#修改功能说明#&gt; by&lt;#作者#&gt; at &lt;#2016#&gt;/&lt;#12#&gt;/&lt;#1#&gt;
+ */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F0E07CEE-2FFB-45B3-B03C-F7833515AA9D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>myheader - 类头注释格式</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>myheader - 类头注释格式</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

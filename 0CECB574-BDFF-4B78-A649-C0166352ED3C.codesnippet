@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mgetA</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#自定义类名#&gt; *&lt;#_成员变量名#&gt; = objc_getAssociatedObject(self, @selector(&lt;#属性名#&gt;));
+
+if  (!&lt;#_成员变量名#&gt;){
+    &lt;#_成员变量名#&gt;= [&lt;#自定义类名#&gt; loadFromNib];
+    self.&lt;#成员变量名#&gt; = &lt;#_成员变量名#&gt;;
+}
+
+return &lt;#_成员变量名#&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0CECB574-BDFF-4B78-A649-C0166352ED3C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mgetA - 使用runtime技术自定义get方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mgetA - 使用runtime技术自定义get方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

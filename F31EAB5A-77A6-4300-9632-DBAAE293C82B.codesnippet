@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mygetallsong</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>MPMediaQuery *myPlaylistsQuery = [MPMediaQuery playlistsQuery];
+    NSArray *playlists = [myPlaylistsQuery collections];
+    
+    for (MPMediaPlaylist *playlist in playlists) {
+        NSLog (@"%@", [playlist valueForProperty: MPMediaPlaylistPropertyName]);
+        
+        NSArray *songs = [playlist items];
+        for (MPMediaItem *song in songs) {
+            NSString *songTitle =
+            [song valueForProperty: MPMediaItemPropertyTitle];
+            NSLog (@"\t\t%@", songTitle);
+        }  
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F31EAB5A-77A6-4300-9632-DBAAE293C82B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>双循环获取ipod所有歌曲</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mygetallsong - 双循环获取ipod所有歌曲</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

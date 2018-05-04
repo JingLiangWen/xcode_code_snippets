@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mtimerAction</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0
+                                                     target:self
+                                            selector:@selector(&lt;#TIMERACTION#&gt;)
+                                                   userInfo:nil
+                                                    repeats:YES];
+    [self.timer fire];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9142E0D8-4443-47BB-ADE9-687EB5002369</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mtimerAction - 初始化timer</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mtimerAction - 初始化timer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

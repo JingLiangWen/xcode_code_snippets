@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mhttpreq</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *url = [CBGetUrl &lt;#method#&gt; ];
+[MBProgressHUD showMessage:@"加载中"];
+[CBNetWork httpWithUrl:url success:^(NSDictionary *rs)
+ {
+     [MBProgressHUD hideHUD];
+     //result ＝＝ 1才算是成功
+     if(rs &amp;&amp; [[rs objectForKey:@"result"] intValue] == 1)
+     {
+         NSMutableArray *array = [[rs objectForKey:@"data" ] getListByJson:[[rs objectForKey:@"list"] objectForKey:@"item"]];
+         if (array) {
+             
+         }
+         
+     }
+     
+ } fail:^(id err){
+     [MBProgressHUD hideHUD];
+     [MBProgressHUD showError:@"获取失败"];
+ }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BAF8F809-6CE2-4636-ACCC-F64EAE02E755</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CB发送http请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mhttpreq - CB发送http请求</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

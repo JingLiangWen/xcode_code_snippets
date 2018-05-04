@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mygetallsong</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>MPMediaQuery *myPlaylistsQuery = [MPMediaQuery songsQuery];
+NSArray *playlists = [myPlaylistsQuery collections];
+
+for (MPMediaPlaylist *playlist in playlists) {
+    NSArray *songs = [playlist items];
+    MPMediaItem *song = [songs lastObject];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>321F0F6D-67E5-4E0E-89AC-7A0DBFC82DF2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>从ipod导入所有歌曲</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mygetallsong - 从ipod导入所有歌曲</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

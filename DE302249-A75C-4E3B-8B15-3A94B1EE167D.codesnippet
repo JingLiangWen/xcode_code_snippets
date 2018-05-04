@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>service_imp</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (int16_t)functionNum {
+    return &lt;#funcationNum#&gt;;
+}
+
++ (instancetype)serviceWith {
+    &lt;#className#&gt; *req = [[self alloc]init];
+    req.reqDic = [@{
+                   } mutableCopy];
+    return req;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DE302249-A75C-4E3B-8B15-3A94B1EE167D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>service_imp - 服务实现</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>service_imp - 服务实现</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

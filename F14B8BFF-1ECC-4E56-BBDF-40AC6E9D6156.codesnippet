@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>myImportSong</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>MPMediaItem* item = &lt;#song#&gt;; //obtained using MediaPlayer.framework APIs
+NSURL* assetURL = [item valueForProperty:MPMediaItemPropertyAssetURL];
+NSURL* destinationURL = [NSURL fileURLWithPath:&lt;#destUrl#&gt;]; //file URL for the location you'd like to import the asset to.
+TSLibraryImport* import = [[TSLibraryImport alloc] init];
+[import importAsset:assetURL toURL:destinationURL completionBlock:^(TSLibraryImport* import) {
+    //check the status and error properties of
+    //TSLibraryImport
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F14B8BFF-1ECC-4E56-BBDF-40AC6E9D6156</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>使用TSLibraryImport导出指定的ipod歌曲</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>myImportSong - 使用TSLibraryImport导出指定的ipod歌曲</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

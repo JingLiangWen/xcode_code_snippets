@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>memptyView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark -
+#pragma mark emptydataset 数据源
+- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView
+{
+    CBMeRcEmptyDataSetView *emptyView = [CBMeRcEmptyDataSetView loadFromNib];
+    return emptyView;
+}
+
+#pragma mark -
+#pragma mark DZNEmptyDataSetDelegate 代理方法
+- (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
+{
+    return YES;
+}
+
+- (BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView
+{
+    return NO;
+}
+
+- (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView
+{
+    return NO;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>817B2837-69B1-4691-B896-2A5C24644DD1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>空数据view代理方法实现</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>memptyViewD - 空数据view代理方法实现</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

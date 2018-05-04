@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mycreatedir</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *exitPath = &lt;#exitpath#&gt;;
+BOOL isDir;
+if (![[NSFileManager defaultManager] fileExistsAtPath:exitPath isDirectory:&amp;isDir]){
+    [[NSFileManager defaultManager] createDirectoryAtPath:exitPath withIntermediateDirectories:YES attributes:nil error:NULL];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>487EE8B3-7D34-49DA-B8FA-844E7565268C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mycreateDir - 创建文件夹</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swtichbtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>switch (&lt;#sender#&gt;.tag) {
+    case ViewControllerTabBarPlayingButtonTag:
+        break;
+    case ViewControllerTabBarMyMusicButtonTag:
+        break;
+    case ViewControllerTabBarChannelButtonTag:
+        break;
+    case ViewControllerTabBarSettingButtonTag:
+        break;
+    default:
+        break;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6BBF7F61-4EF9-46BA-8E97-D1C5CEB5E761</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swtichbtn</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

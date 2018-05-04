@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mtimerMethod</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)startTimer
+{
+    [self stopTimer];
+    [self commonInitTimer];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:&lt;#秒数#&gt;f target:self selector:@selector(&lt;#timerActionMethodName#&gt;) userInfo:nil repeats:YES];
+    [self.timer fire];
+}
+
+-(void)commonInitTimer
+{
+    
+}
+
+- (void)stopTimer
+{
+    [self commonInitTimer];
+    [self.timer invalidate];
+    self.timer = nil;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>51303EE8-D4A8-42EF-9E93-2524602F6ECA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mtimerMethod - mtimer的定义start/stop方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mtimerMethod - mtimer的定义start/stop方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

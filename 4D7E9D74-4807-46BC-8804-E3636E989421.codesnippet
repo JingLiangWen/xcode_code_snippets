@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mdetector</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
+[detector addCandidate:&lt;#vc#&gt;];
+ 
+        NSSet *retainCycles = [detector findRetainCycles];
+        NSLog(@"循环引用：%@", retainCycles);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4D7E9D74-4807-46BC-8804-E3636E989421</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mdetector - FB循环引用</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mdetector - FB循环引用</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sbvc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"&lt;#SBName#&gt;" bundle:nil];
+&lt;#VCClass#&gt; *viewController = [storyboard instantiateViewControllerWithIdentifier:@"&lt;#VCID#&gt;"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>11C11F61-805D-4A4D-957E-D62323D08802</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>sbvc 根据sbc创建viewcontroller</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>sbvc - sbvc 根据sbc创建viewcontroller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

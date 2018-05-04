@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>donghua_mas</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#self.view#&gt; setNeedsUpdateConstraints];
+[&lt;#self.view#&gt; updateConstraintsIfNeeded];
+
+[UIView animateWithDuration:0.5 animations:^{
+  [&lt;#self.view#&gt; layoutIfNeeded];
+} completion:^(BOOL finished) {
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>08E9B642-688F-463B-873D-F3E86B5A8B58</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>donghua_mas - 简历约束动画</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>donghua_mas - 简历约束动画</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

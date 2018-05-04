@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mgroup</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 1.创建队列组
+dispatch_group_t group = dispatch_group_create();
+dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+
+// 2.执行block
+// __block type instance = nil; // block里面需要修改值时要注意
+dispatch_group_async(group, queue, ^{
+    
+});
+
+// 3.执行block2
+dispatch_group_async(group, queue, ^{
+    
+});
+
+// 4.合并block
+dispatch_group_notify(group, queue, ^{
+    // 5.回到主线程执行
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+    });
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C08A2501-5EE2-4286-A9D8-22C548255F82</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>GCD队列组</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mgroup - GCD队列组</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

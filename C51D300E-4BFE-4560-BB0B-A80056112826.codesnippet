@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mkvo</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[self.KVOController observe:&lt;#被监听#&gt; keyPath:@"&lt;#被监听属性#&gt;" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew block:^(&lt;#vc#&gt; observer, id object, NSDictionary *change) {
+    if (change[NSKeyValueChangeNewKey] == change[NSKeyValueChangeOldKey]) {
+        return ;
+    }
+    // 一定不要用self!!!
+
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C51D300E-4BFE-4560-BB0B-A80056112826</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mkvo - fbkvo监听快速生成代码</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mkvo - fbkvo监听快速生成代码</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

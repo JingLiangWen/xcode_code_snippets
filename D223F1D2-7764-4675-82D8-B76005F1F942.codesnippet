@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDictionary *dic = @{
+                            @"album_ids":album_ids
+                          };
+    
+    [CBXMTool requestWithMethod:@"album.styles" params:dic handler:^(NSString *result) {
+        NSDictionary *rsDic = [result JSONValue];
+        if ([(NSNumber *)rsDic[@"state"] intValue] == 0) {
+            // 报文分析
+            NSArray *list = [CBXMStyle objectArrayWithKeyValuesArray:rsDic[@"data"][@"list"]];
+            // 触发回调
+            if (successful) {
+                successful(list);
+            }
+        }else{
+            // 触发回调
+            if (fail) {
+                fail([(NSNumber *)rsDic[@"state"] intValue],rsDic[@"message"]);
+            }
+        }
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D223F1D2-7764-4675-82D8-B76005F1F942</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string> </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

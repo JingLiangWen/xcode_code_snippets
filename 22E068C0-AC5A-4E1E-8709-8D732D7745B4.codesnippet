@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initAppearance</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (void)initialize {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        [self setDefaultAppearance];
+    });
+}
+
++ (void)setDefaultAppearance {
+    &lt;#className#&gt; *appearance = [&lt;#className#&gt; appearance];
+    appearance.&lt;#appearance属性#&gt; = &lt;#默认值#&gt;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>22E068C0-AC5A-4E1E-8709-8D732D7745B4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>initAppearance - 初始化主题代码</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>initAppearance - 初始化主题代码</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

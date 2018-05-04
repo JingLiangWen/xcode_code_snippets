@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mgif</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSURL *url = [[NSBundle mainBundle] URLForResource:&lt;#gifName#&gt; withExtension:@"gif"];
+NSData *data = [NSData dataWithContentsOfURL:url];
+FLAnimatedImage *animatedImage = [FLAnimatedImage animatedImageWithGIFData:data];
+self.imageView.animatedImage = animatedImage;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C36B0947-AAAA-44EF-9E87-E8C1794DF15D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>使用Fla框架</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mgif - 使用Fla框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

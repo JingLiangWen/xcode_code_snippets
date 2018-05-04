@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mxmreq</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDictionary *dic = @{
+                      @"&lt;#K#&gt;":[NSString stringWithFormat:@"%d",&lt;#n#&gt;],
+                      @"&lt;#k#&gt;":&lt;#v#&gt;
+                      };
+[CBXMTool requestWithMethod:@"&lt;#reqname#&gt;" params:dic handler:^(NSString *result) {
+    if (result.length &gt; 0){
+        
+        NSDictionary *rsDic = [result JSONValue];
+        if ([(NSNumber *)rsDic[@"state"] intValue] == 0) {
+            // 1.转换modal
+            
+            // 2.回调
+            if (successful) {
+                successful(&lt;#p#&gt;);
+            }
+        }else{
+            // 3.失败回调
+            if (fail) {
+                fail([(NSNumber *)rsDic[@"state"] intValue],rsDic[@"message"]);
+            }
+        }
+    }else
+    {
+        fail(errorCodeJSONError,errorMsgJSONError);
+    }
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BF770DCB-6E32-4BF3-8C47-2C793974C77B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mxmreq - 虾米发送网络请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mxmreq - 虾米发送网络请求</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

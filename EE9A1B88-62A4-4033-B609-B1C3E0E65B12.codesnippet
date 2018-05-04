@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swithMode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>switch (PLAYMODE) {
+    case ModeNET:
+        DLog(@"NET");
+        break;
+    case ModeFM:
+        DLog(@"FM");
+        break;
+    case ModeBT:
+        DLog(@"BT");
+        break;
+    case ModeAUX:
+        DLog(@"LINE IN");
+        break;
+    case ModeUSB:
+        DLog(@"USB");
+        break;
+    default:
+        break;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EE9A1B88-62A4-4033-B609-B1C3E0E65B12</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swithMode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

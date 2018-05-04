@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mgroup2</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// create a group
+    dispatch_group_t group = dispatch_group_create();
+    
+    // pair a dispatch_group_enter for each dispatch_group_leave
+    dispatch_group_enter(group);     // pair 1 enter
+
+[self &lt;#method#&gt;WithCompleteBlock:^{
+        dispatch_group_leave(group);
+        DLog(@"完成1");
+    }];
+    
+    // again... (and again...)
+    dispatch_group_enter(group);     // pair 2 enter
+
+[self &lt;#method2#&gt;WithCompleteBlock:^{
+        dispatch_group_leave(group);
+        DLog(@"完成2");
+    }];
+    
+
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        &lt;#finished#&gt;
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E170C88E-31E6-47A4-90DF-73061D6FAE02</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>异步返回group</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mgroup2 - 异步返回group</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

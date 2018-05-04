@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>malert</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[[[UIAlertView alloc]initWithTitle:@"" message:&lt;#显示信息#&gt; delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>227588C7-841C-43C3-96BD-00E9F351EF25</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>malert - alertview show的快速显示</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>malert - alertview show的快速显示</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mlazy</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- &lt;#pname#&gt; {
+    if (!&lt;#pname#&gt;) {
+        &lt;#pname#&gt; = [&lt;#cname#&gt;];
+    }
+    return &lt;#pname#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2CE295DA-0CB8-4128-9033-08C11484CC5D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mlazy - 懒加载</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mlazy - 懒加载</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
